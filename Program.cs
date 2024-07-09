@@ -1,6 +1,6 @@
 ﻿namespace g1
 {
-    #region Q1
+ #region Q1
     public enum WeekDays
     {
         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
@@ -17,10 +17,10 @@
         }
     }
 
-    #endregion
+#endregion
 
 
-    #region Q2
+ #region Q2
     public enum Season
     {
         Spring = 1, Summer = 2, Autumn = 3, Winter = 4
@@ -53,12 +53,12 @@
         }
     }
 
-    #endregion
+#endregion
 
 
 
 
-    #region Q3
+#region Q3
     public enum WeekDays
     {
 
@@ -71,11 +71,11 @@
         }
     }
 
-    #endregion
+#endregion
 
 
 
-    #region Q4
+#region Q4
     public enum colors
     {
         Red, Green, Blue
@@ -97,38 +97,39 @@
         }
     }
 
-    #endregion
+#endregion
 
-    #region Q6
-    internal struct point
+#region Q6
+internal struct point
+{
+
+    public int x, y;
+    public point(int s, int m)
     {
-
-        public int x, y;
-        public point(int s, int m)
+        x = 0;
+    }
+}
+class prog6
+{
+    static void Main(String[] args)
+    {
+        point p1;
+        p1.x = int.Parse(Console.ReadLine());
+        p1.y = int.Parse(Console.ReadLine());
+        if (p1.x > p1.y)
         {
-            x = 0;
+            Console.WriteLine($"DISTANCE = {p1.x - p1.y}");
+        }
+        else
+        {
+            Console.WriteLine($"DISTANCE = {p1.y - p1.x}");
         }
     }
-    class prog6
-    {
-        static void Main(String[] args)
-        {
-            point p1;
-            p1.x = int.Parse(Console.ReadLine());
-            p1.y = int.Parse(Console.ReadLine());
-            if (p1.x > p1.y)
-            {
-                Console.WriteLine($"DISTANCE = {p1.x - p1.y}");
-            }
-            else
-            {
-                Console.WriteLine($"DISTANCE = {p1.y - p1.x}");
-            }
+
+
         }
 
-
-    }
-
-    #endregion
+#endregion
 
 }
+//..
